@@ -1,0 +1,64 @@
+--esta view vai mostar o nome de todos os alunos a candidatar-se a bioinformatica
+CREATE VIEW [bioinformatica] AS
+SELECT nome, Cod_Curso
+FROM pj.Candidato
+WHERE Cod_Curso = 1  
+
+--esta view vai mostrar todos o nome dos alunos que estão a candidatar-se a biotecnologia 
+CREATE VIEW [biotecnologia] AS
+SELECT Cod_Curso, nome
+FROM pj.Candidato
+WHERE Cod_Curso = 2
+
+
+--esta view vai mostrar todos o nome dos alunos que estão a candidatar-se a Contabilidade 
+CREATE VIEW [Contabilidade] AS
+SELECT Cod_Curso, nome
+FROM pj.Candidato
+WHERE Cod_Curso = 3
+
+
+--esta view vai mostrar todos o nome dos alunos que estão a candidatar-se a Cuidados Veterinários 
+CREATE VIEW [Cuidados Veterinários] AS
+SELECT Cod_Curso, nome
+FROM pj.Candidato
+WHERE Cod_Curso = 4
+
+
+--esta view vai mostrar todos o nome dos alunos que estão a candidatar-se a Desenvolvimento de Produtos Multimédia 
+CREATE VIEW [Desenvolvimento de Produtos Multimédia] AS
+SELECT Cod_Curso, nome
+FROM pj.Candidato
+WHERE Cod_Curso = 5
+
+
+--esta view vai mostrar todos o nome dos alunos que estão a candidatar-se a Defesa da Floresta Contra Incêndios 
+CREATE VIEW [Defesa da Floresta Contra Incêndios] AS
+SELECT Cod_Curso, nome
+FROM pj.Candidato
+WHERE Cod_Curso = 6
+
+
+--esta view vai mostrar todos o nome dos alunos que estão a candidatar-se a Produção Agrícola 
+CREATE VIEW [Produção Agrícola] AS
+SELECT Cod_Curso, nome
+FROM pj.Candidato
+WHERE Cod_Curso = 7
+
+--esta view vai mostrar todos o nome dos alunos que estão a candidatar-se a Tecnologia Mecânica e Veículos 
+CREATE VIEW [Tecnologia Mecânica e Veículos] AS
+SELECT Cod_Curso, nome
+FROM pj.Candidato
+WHERE Cod_Curso = 8
+
+--esta view vai mostrar todos o nome dos alunos que estão a candidatar-se a Gerontologia 
+CREATE VIEW [Gerontologia] AS
+SELECT Cod_Curso, nome
+FROM pj.Candidato
+WHERE Cod_Curso = 9
+
+--esta view vai mostrar todos o nome dos alunos que estão a candidatar-se a Gestão de Vendas e Marketing
+CREATE VIEW [Gestão de Vendas e Marketing] AS
+SELECT Cod_Curso, nome
+FROM pj.Candidato
+WHERE Cod_Curso = 10

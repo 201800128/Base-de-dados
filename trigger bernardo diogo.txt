@@ -1,0 +1,51 @@
+
+
+
+----------------------------------------------------------	
+CREATE TRIGGER [idade_M23]				--
+ON pj.M23						--
+INSTEAD OF INSERT					--
+AS							--
+	BEGIN 						--
+	SET NOCOUNT ON					--
+	INSERT pj.M23(ID_candidatura,idade) 		--
+		SELECT ID_candidatura, idade		--
+		FROM inserted				--
+		WHERE idade >= 23			--
+END 							--
+GO							--
+----------------------------------------------------------
+
+
+--este trigger diz quando a morada é atualizada e dá uma mensagem a dizer que foi atualizada
+CREATE TRIGGER [nova morada]
+ON pj.candidato
+FOR UPDATE 
+AS 
+BEGIN 
+	DECLARE @morada_antiga varchar(100), @morada_nova varchar(100)
+	SELECT @morada_antiga = morada from deleted
+	SELECT @morada_nova = morada from inserted
+		if @morada_antiga <> @morada_nova 
+			print('Mudou de morada')
+END 
+GO 
+
+
+
+
+
+
+--este trigger diz quando o contacto é atualizado e dá uma mensagem a dizer que foi atualizado
+CREATE TRIGGER [contacto mudou]
+ON pj.candidato
+FOR UPDATE 
+AS 
+BEGIN 
+	DECLARE @contacto_antigo char(9), @contacto_novo char(9)
+	SELECT @contacto_antigo = contacto from deleted
+	SELECT @contacto_novo = contacto from inserted 
+		if @contacto_antigo <> @contacto_novo
+			print('Mudou de contacto')
+END 
+GO 

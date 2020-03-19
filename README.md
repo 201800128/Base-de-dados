@@ -10,3 +10,7 @@ ajudar na gestão do processo de candidatura a uma instituição do ensino super
 In the course unit of the bioinformatics degree "Database", we were asked to create a database to help manage the application process 
 for an institution higher education. For that, we used the Microsoft tool "SQL Management Studio" that uses a language of structured 
 query or SQL.
+
+# What I've learned?
+With this project, I acquired some basic knowledge about this language "SQL" and the Microsoft tool "SQL Management Studio".
+I hope it can be useful for something in the near future.

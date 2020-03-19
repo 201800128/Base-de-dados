@@ -13,4 +13,4 @@ query or SQL.
 
 # What I've learned?
 With this project, I acquired some basic knowledge about this language "SQL" and the Microsoft tool "SQL Management Studio".
-I hope it can be useful for something in the near future.
+I hope it can be useful in the near future.

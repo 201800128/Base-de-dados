@@ -1,6 +1,3 @@
-# Base de Dados
-Projeto de base de dados
-
 # What is this? 
 This is a repository with  project developed in the curricular unit "Base de Dados" of my bioinformatics degree.
 We were asked to create a database to help manage the application process for an institution higher education. 
